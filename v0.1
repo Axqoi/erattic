@@ -1,0 +1,193 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "Erattic Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "erattic"})
+
+--[[
+Name = <Erattic Hub> - The name of the UI.
+HidePremium = <bool> - Whether or not the user details shows Premium status or not.
+SaveConfig = <bool> - Toggles the config saving in the UI.
+ConfigFolder = <string> - The name of the folder where the configs are saved.
+IntroEnabled = <bool> - Whether or not to show the intro animation.
+IntroText = <string> - Text to show in the intro animation.
+IntroIcon = <string> - URL to the image you want to use in the intro animation.
+Icon = <string> - URL to the image you want displayed on the window.
+CloseCallback = <function> - Function to execute when the window is closed.
+]]
+
+local trdTab = Window:MakeTab({
+	Name = "trd🎩",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+--[[
+Name = <string> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+]]
+
+local Section = trdTab:AddSection({
+	Name = "Scripts"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+OrionLib:MakeNotification({
+	Name = "Loaded",
+	Content = "erattic hub has been loaded ",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+--[[
+Title = <string> - The title of the notification.
+Content = <string> - The content of the notification.
+Image = <string> - The icon of the notification.
+Time = <number> - The duration of the notfication.
+]]
+
+trdTab:AddButton({
+	Name = "Syn's Gui",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/kureu/Roblox-T.R.D-Camp-Script/main/Roblox%20T.R.D%20Camp%20Script"))();
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+trdTab:AddButton({
+	Name = "Chat Bypass",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/synnyyy/synergy/additional/betterbypasser", true))({
+    Method = 1, -- Method 1 is the main method. Method two is emojis. Method 3 is full transparency, no special symbols. Method 3 has been improved!
+    Keybind = "F", -- Usually defaulted to F. You can change this keybind by replacing the string with a letter. Works for uppercase and lowercase.
+    ShowMethodDictionary = true -- Shows you the full list of words that you can say with the method. Press FN + F9 to see this dictionary.
+})
+
+
+-- https://discord.gg/RXUwZHjNKm
+-- This page will be always updated no matter what.
+-- BetterBypasser does not log anything.
+
+-- If you want the new update or the new invis method, please change "Method" to 3
+-- Want to see the words for Method 1? Please view the console to do so. We are planning to change this to a UI where it shows you the words inste
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+local SlapTab = Window:MakeTab({
+	Name = "Slap Battles🤚",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+--[[
+Name = <string> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+]]
+
+local Section = SlapTab:AddSection({
+	Name = "Scripts"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+SlapTab:AddButton({
+	Name = "Hub That exists",
+	Callback = function()
+      		loadstring(game:HttpGet(("https://raw.githubusercontent.com/ionlyusegithubformcmods/1-Line-Scripts/main/Slap%20Battles")))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+SlapTab:AddButton({
+	Name = "R20 Hub",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/cheesynob39/R2O/main/LOADSTRING.lua"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+local FTAPTab = Window:MakeTab({
+	Name = "FTAP🙃",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+--[[
+Name = <string> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+]]
+
+local Section = FTAPTab:AddSection({
+	Name = "FTAP"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+FTAPTab:AddButton({
+	Name = "FTAP HUB (op)",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/BlizTBr/scripts/main/FTAP.lua"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+local UniTab = Window:MakeTab({
+	Name = "Universal",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+--[[
+Name = <string> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+]]
+
+local Section = UniTab:AddSection({
+	Name = "Universal scripts"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+UniTab:AddButton({
+	Name = "infinite yeild",
+	Callback = function()
+      		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
